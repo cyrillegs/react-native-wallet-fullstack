@@ -1,0 +1,26 @@
+Step 1 - This will initialize a node.js project and create a package.json file
+npm init -y
+
+Step 2 - A shortcut for npm install express and it installs the Express.js library — a popular web framework for Node.js — into your project.
+npm i express
+
+Step 3 - To be able to access environmental variables
+npm i dotenv@16.5.0 cors@2.8.5 @neondatabase/serverless@1.0.0
+
+Step 4 - Installs Nodemon as a development dependency in your Node.js project. Nodemon automatically restarts your Node.js server whenever you make changes to your source files. That means you don’t have to keep stopping and restarting your app manually while developing.
+npm i -D nodemon
+
+Step 5 - To run the server
+node server.js
+
+on package.json edit the scripts
+to run the script just type npm run dev
+"scripts": {
+    "dev": "nodemon server.js"
+}
+
+Step 6 - 
+
+npx neonctl@latest init
+
+psql 'postgresql://neondb_owner:npg_MlB6w4ujKrRF@ep-falling-boat-a11ni4dg-pooler.ap-southeast-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require'

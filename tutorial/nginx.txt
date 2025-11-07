@@ -1,0 +1,64 @@
+1️⃣ List all active site configs
+ls /etc/nginx/sites-enabled/
+
+🧹 To remove the stats site (and optionally the other one)
+sudo rm /etc/nginx/sites-enabled/stats
+sudo rm /etc/nginx/sites-enabled/stats.cyrildave.io
+
+Check nginx
+sudo nginx -t
+sample output: nginx: configuration file /etc/nginx/nginx.conf test is successful
+
+Reload nginx
+sudo systemctl reload nginx
+
+⚙️ Step 1: Create the Nginx config
+sudo nano /etc/nginx/sites-available/react-native-wallet-api.cyrildavelegaspi.online
+
+-------------------------------------------------------------------------------------
+
+
+🚀 Nginx Setup for react-native-wallet-api Backend
+Prerequisites
+- VPS running Ubuntu
+- Backend running in Docker on port 5005
+- Domain (e.g., cyrildavelegaspi.online) with DNS access
+- Nginx installed (sudo apt install nginx)
+
+Step 1: Increase server_names_hash_bucket_size
+- If you have multiple subdomains, edit /etc/nginx/nginx.conf:
+sudo nano /etc/nginx/nginx.conf
+- Inside the http { ... } block, add or uncomment:
+server_names_hash_bucket_size 128;
+- Then test and reload Nginx:
+sudo nginx -t
+sudo systemctl reload nginx
+
+Step 2: Create Nginx site config
+- Create a config file for your backend:
+sudo nano /etc/nginx/sites-available/react-native-wallet-api.cyrildavelegaspi.online
+- Paste:
+server {
+    server_name react-native-wallet-api.cyrildavelegaspi.online;
+
+    location / {
+        proxy_pass http://localhost:5005;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+    }
+}
+
+Step 3: Enable the site
+Create a symbolic link to sites-enabled:
+sudo ln -s /etc/nginx/sites-available/react-native-wallet-api.cyrildavelegaspi.online /etc/nginx/sites-enabled/
+
+Step 4: Test and reload Nginx
+sudo nginx -t
+sudo systemctl reload nginx
+- ✅ Ensure you see:
+nginx: configuration file /etc/nginx/nginx.conf test is successful
+
+Step 5: Configure DNS

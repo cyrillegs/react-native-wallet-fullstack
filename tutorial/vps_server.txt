@@ -1,0 +1,57 @@
+🚀 STEP 1: Create a folder for your backend
+sudo mkdir -p /var/www/wallet-backend
+sudo chown $USER:$USER /var/www/wallet-backend
+cd /var/www/wallet-backend
+
+🧩 STEP 2: Upload or clone your backend code
+git clone https://github.com/cyrillegs/react-native-wallet-api.git
+
+⚙️ STEP 3: Install dependencies
+npm install
+
+🏗️ STEP 4: Upload .env file from laptop to vps server
+scp .env root@cyrildavelegaspi.online:/var/www/wallet-backend/react-native-wallet-api/.env
+
+🧩 STEP 5: Create a Dockerfile in your project
+# Use the official Node.js image
+FROM node:20
+
+# Set working directory inside the container
+WORKDIR /app
+
+# Copy package files
+COPY package*.json ./
+
+# Install dependencies
+RUN npm install
+
+# Copy the rest of your project files
+COPY . .
+
+# Expose the port your backend listens on
+EXPOSE 5005
+
+# Start your backend
+CMD ["npm", "start"]
+
+
+🏗️ STEP 6: Build your Docker image
+sudo docker build -t react-native-wallet-api .
+
+🚀 STEP 7: Run your container
+sudo docker run -d -p 5005:5005 \
+  --env-file .env \
+  --restart unless-stopped \
+  --name wallet-api \
+  react-native-wallet-api
+
+
+REMOVING EXISTING DOCKER
+🧩 Step 1 — Check existing containers
+sudo docker ps -a
+
+🧩 Step 2 — Remove the old one
+sudo docker rm (docker_name)wallet-api
+
+🧩 Optional: Check what ports are in use
+sudo docker ps --format "table {{.Names}}\t{{.Ports}}"

@@ -1,0 +1,4 @@
+npx create-expo-app@latest .
+npm run reset-project
+
+npm i react-native-keyboard-aware-scroll-view
