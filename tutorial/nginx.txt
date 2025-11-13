@@ -5,6 +5,13 @@ ls /etc/nginx/sites-enabled/
 sudo rm /etc/nginx/sites-enabled/stats
 sudo rm /etc/nginx/sites-enabled/stats.cyrildave.io
 
+To view a file:
+cat /etc/nginx/sites-enabled/benfin.cyrildavelegaspi.online
+cat /etc/nginx/sites-enabled/react-native-wallet-api.cyrildavelegaspi.online
+cat /etc/nginx/sites-enabled/lazy-blogger
+
+cd /var/www/wallet-backend
+
 Check nginx
 sudo nginx -t
 sample output: nginx: configuration file /etc/nginx/nginx.conf test is successful

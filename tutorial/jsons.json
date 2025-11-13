@@ -1,0 +1,263 @@
+{
+  "to": "+16044426744",
+  "c_id": "c27cbbd1-9ab2-4e3a-aa22-d6f78429dfbf",
+  "from": "+19804791624",
+  "price": 0.188,
+  "end_at": "2025-11-06T23:46:19.000Z",
+  "record": true,
+  "status": "completed",
+  "call_id": "c27cbbd1-9ab2-4e3a-aa22-d6f78429dfbf",
+  "inbound": false,
+  "summary": "The call was a health check-in for Wolfram, a pet being monitored for pruritus (itching) by Jojo Vet. The pet's owner, Wolf, reported a moderate level of itching (rated 2 out of 4) which is slightly better than the previous check-in. The itching is primarily affecting Wolfram's right leg, with sores and redness present, but no hair loss. Wolfram had a medicated bath once that day, and his energy, appetite, and sleep quality have been slightly reduced. The assistant will call daily to check on Wolfram's condition, with the next call scheduled for 6 PM. The veterinarian will review the update and reach out if any changes to the treatment plan are needed.",
+  "analysis": {
+    "symptoms": {
+      "sores": "present",
+      "redness": "some",
+      "hair_loss": "none",
+      "itching_severity": 2
+    },
+    "call_summary": "The owner reported that Wolfram's itching has improved slightly since the last check-in, with a current severity rating of 2 out of 4. The itching is primarily affecting his right leg, with some redness and sores present. Wolfram's energy, appetite, and sleep quality have been reduced slightly. He was given a medicated bath once today.",
+    "energy_level": null,
+    "new_symptoms": null,
+    "comfort_level": null,
+    "appetite_level": null,
+    "clinical_notes": "The owner reported that Wolfram's itching has improved slightly since the last check-in. He was given a medicated bath once today.",
+    "overall_change": "slightly_better",
+    "owner_concerns": null,
+    "treatments_given": [
+      {
+        "dosage": null,
+        "time_given": "once today",
+        "effectiveness": null,
+        "treatment_name": "medicated bath"
+      }
+    ],
+    "affected_body_areas": ["right leg"],
+    "preferred_call_time": "6 PM"
+  },
+  "batch_id": null,
+  "metadata": {
+    "pet_id": "690d278fe332f03b36cd82e9",
+    "species": "dog",
+    "pet_name": "Wolfram",
+    "owner_name": "WolfA",
+    "practice_id": "690292307b63fbcd733c18e5",
+    "is_first_call": false,
+    "primary_complaint": "pruritic"
+  },
+  "voice_id": "2f9fdbc7-4bf2-4792-8a18-21ce3c93978f",
+  "completed": true,
+  "variables": {
+    "to": "+16044426744",
+    "now": "Thursday, November 6, 2025 3:44 PM",
+    "city": "VANCOUVER",
+    "from": "+19804791624",
+    "state": "BC",
+    "call_id": "c27cbbd1-9ab2-4e3a-aa22-d6f78429dfbf",
+    "country": "CA",
+    "now_utc": "Thursday, November 6, 2025 11:44 PM",
+    "language": "English",
+    "metadata": {
+      "pet_id": "690d278fe332f03b36cd82e9",
+      "species": "dog",
+      "pet_name": "Wolfram",
+      "owner_name": "WolfA",
+      "practice_id": "690292307b63fbcd733c18e5",
+      "is_first_call": false,
+      "primary_complaint": "pruritic"
+    },
+    "short_to": "6044426744",
+    "timezone": "America/Los_Angeles",
+    "timestamp": "2025-11-06T15:44:15-08:00",
+    "short_from": "9804791624",
+    "phone_number": "+16044426744"
+  },
+  "created_at": "2025-11-06T23:44:02.873Z",
+  "pathway_id": null,
+  "start_time": null,
+  "started_at": "2025-11-06T23:44:14.000Z",
+  "updated_at": "2025-11-06T23:46:30.203Z",
+  "answered_by": "human",
+  "call_length": 2.08333333333333,
+  "transcripts": [
+    {
+      "id": 398886189,
+      "text": "Hello.",
+      "user": "user",
+      "created_at": "2025-11-06T23:44:16.632Z"
+    },
+    {
+      "id": 398886233,
+      "text": "Hello, may I speak with Wolf? This is Tailee calling from Jojo Vet for Wolfram's health check-in.",
+      "user": "assistant",
+      "created_at": "2025-11-06T23:44:18.950Z"
+    },
+    {
+      "id": 398886353,
+      "text": "Speaking.",
+      "user": "user",
+      "created_at": "2025-11-06T23:44:24.651Z"
+    },
+    {
+      "id": 398886429,
+      "text": "Great! Thank you for taking my call. This will only take a few minutes. I'm calling to check on Wolfram who we're monitoring for pruritus, or itching. On a scale of zero to four, how would you rate his itching today? Zero being none, and four being severe.",
+      "user": "assistant",
+      "created_at": "2025-11-06T23:44:27.754Z"
+    },
+    {
+      "id": 398886762,
+      "text": "A two.",
+      "user": "user",
+      "created_at": "2025-11-06T23:44:42.091Z"
+    },
+    {
+      "id": 398886806,
+      "text": "Okay, a two, that's moderate. How has that been compared to our last check-in? Would you say it's much better, slightly better-",
+      "user": "assistant",
+      "created_at": "2025-11-06T23:44:43.868Z"
+    },
+    {
+      "id": 398886973,
+      "text": "I never",
+      "user": "user",
+      "created_at": "2025-11-06T23:44:50.655Z"
+    },
+    {
+      "id": 398886994,
+      "text": "A little better.",
+      "user": "user",
+      "created_at": "2025-11-06T23:44:51.672Z"
+    },
+    {
+      "id": 398887045,
+      "text": "Okay, so a little better, that's good to hear. What areas of his body seem to be most affected by the itching?",
+      "user": "assistant",
+      "created_at": "2025-11-06T23:44:53.661Z"
+    },
+    {
+      "id": 398887242,
+      "text": "What was it before?",
+      "user": "user",
+      "created_at": "2025-11-06T23:45:01.712Z"
+    },
+    {
+      "id": 398887312,
+      "text": "I don't have the previous rating in front of me, but I can note that it's a little better now. Regarding the areas of his b-",
+      "user": "assistant",
+      "created_at": "2025-11-06T23:45:04.640Z"
+    },
+    {
+      "id": 398887410,
+      "text": "Yeah, it's on the right leg.",
+      "user": "user",
+      "created_at": "2025-11-06T23:45:09.592Z"
+    },
+    {
+      "id": 398887466,
+      "text": "Okay, on his right leg. Are you seeing any redness, hair loss, or sores in that area?",
+      "user": "assistant",
+      "created_at": "2025-11-06T23:45:12.339Z"
+    },
+    {
+      "id": 398887630,
+      "text": "Yeah, there's still sores and a bit of redness and no hair loss.",
+      "user": "user",
+      "created_at": "2025-11-06T23:45:19.812Z"
+    },
+    {
+      "id": 398887730,
+      "text": "Alright, sores and some redness but no hair loss on the right leg. Have you been giving him any medications or treatments? If so, what are you using and how often?",
+      "user": "assistant",
+      "created_at": "2025-11-06T23:45:24.699Z"
+    },
+    {
+      "id": 398887874,
+      "text": "Yeah, he had a medicated bath.",
+      "user": "user",
+      "created_at": "2025-11-06T23:45:32.652Z"
+    },
+    {
+      "id": 398887912,
+      "text": "Okay, th-",
+      "user": "assistant",
+      "created_at": "2025-11-06T23:45:34.170Z"
+    },
+    {
+      "id": 398887918,
+      "text": "And just once today.",
+      "user": "user",
+      "created_at": "2025-11-06T23:45:34.173Z"
+    },
+    {
+      "id": 398887971,
+      "text": "And how was his overall energy, appetite, and sleep quality since the last check-in?",
+      "user": "assistant",
+      "created_at": "2025-11-06T23:45:36.920Z"
+    },
+    {
+      "id": 398888267,
+      "text": "It's been a little bit reduced.",
+      "user": "user",
+      "created_at": "2025-11-06T23:45:48.152Z"
+    },
+    {
+      "id": 398888337,
+      "text": "Okay, a little bit reduced. Thank you for that information. Your veterinarian would like me to call every day to check on Wolfram. When is a good time to call you for the next update? For example, morni-",
+      "user": "assistant",
+      "created_at": "2025-11-06T23:45:51.067Z"
+    },
+    {
+      "id": 398888550,
+      "text": "Six PM.",
+      "user": "user",
+      "created_at": "2025-11-06T23:46:00.854Z"
+    },
+    {
+      "id": 398888703,
+      "text": "Perfect. Thank you so much for taking the time to give me this update on Wolfram. I'll make note of your preferred call time, and you'll hear from me then. Your veterinarian will review this information and will reach out if any changes to Wolfram's treatment plan are needed. Have a great day!",
+      "user": "assistant",
+      "created_at": "2025-11-06T23:46:06.422Z"
+    },
+    {
+      "id": 398889004,
+      "text": "Thank you.",
+      "user": "user",
+      "created_at": "2025-11-06T23:46:19.231Z"
+    }
+  ],
+  "max_duration": 12,
+  "pathway_logs": null,
+  "pathway_tags": [],
+  "queue_status": "complete",
+  "call_ended_by": "USER",
+  "error_message": null,
+  "local_dialing": false,
+  "recording_url": "https://api.bland.ai/v1/recordings/c27cbbd1-9ab2-4e3a-aa22-d6f78429dfbf:72e2071b-6568-4512-9e42-f5afcb204a5a",
+  "transferred_at": null,
+  "transferred_to": null,
+  "analysis_schema": {
+    "symptoms": "object: Key-value pairs of any symptoms/metrics discussed during the call. Use descriptive keys like 'itching_severity', 'limping_score', 'vomiting_frequency', 'pain_level', 'redness', 'swelling', etc. Values should be numbers 0-4 for severity scales, or strings for qualitative observations",
+    "call_summary": "string: Comprehensive 3-5 sentence summary of the call, pet's current status, and owner's main concerns",
+    "energy_level": "number 0-4: Pet's energy/activity level (0=none, 4=excellent)",
+    "new_symptoms": "string: Description of any new symptoms or changes the owner reported",
+    "comfort_level": "number 0-4: Pet's overall comfort (0=very uncomfortable, 4=comfortable)",
+    "appetite_level": "number 0-4: Pet's appetite (0=not eating, 4=eating normally)",
+    "clinical_notes": "string: Any other clinically relevant observations or context from the conversation",
+    "overall_change": "string: 'much_better', 'slightly_better', 'no_change', 'slightly_worse', or 'much_worse'",
+    "owner_concerns": "string: Any specific concerns or questions the owner expressed",
+    "treatments_given": "array of objects: Each object should have {treatment_name: string, dosage: string, time_given: string, effectiveness: string}",
+    "affected_body_areas": "array of strings: List of body parts/areas affected (e.g., ['left front paw', 'belly', 'ears'])",
+    "preferred_call_time": "string: Owner's exact preferred time for next call (e.g., 'morning', '9:00 AM', 'after 6pm', 'evenings')"
+  },
+  "disposition_tag": "FOLLOW_UP_REQUIRED",
+  "pathway_version": null,
+  "corrected_duration": "125",
+  "warm_transfer_call": null,
+  "citation_schema_ids": [],
+  "is_proxy_agent_call": false,
+  "warm_transfer_calls": null,
+  "recording_expiration": null,
+  "pre_transfer_duration": null,
+  "post_transfer_duration": null,
+  "concatenated_transcript": "user: Hello. \n assistant: Hello, may I speak with Wolf? This is Tailee calling from Jojo Vet for Wolfram's health check-in. \n user: Speaking. \n assistant: Great! Thank you for taking my call. This will only take a few minutes. I'm calling to check on Wolfram who we're monitoring for pruritus, or itching. On a scale of zero to four, how would you rate his itching today? Zero being none, and four being severe. \n user: A two. \n assistant: Okay, a two, that's moderate. How has that been compared to our last check-in? Would you say it's much better, slightly better- \n user: I never \n user: A little better. \n assistant: Okay, so a little better, that's good to hear. What areas of his body seem to be most affected by the itching? \n user: What was it before? \n assistant: I don't have the previous rating in front of me, but I can note that it's a little better now. Regarding the areas of his b- \n user: Yeah, it's on the right leg. \n assistant: Okay, on his right leg. Are you seeing any redness, hair loss, or sores in that area? \n user: Yeah, there's still sores and a bit of redness and no hair loss. \n assistant: Alright, sores and some redness but no hair loss on the right leg. Have you been giving him any medications or treatments? If so, what are you using and how often? \n user: Yeah, he had a medicated bath. \n assistant: Okay, th- \n user: And just once today. \n assistant: And how was his overall energy, appetite, and sleep quality since the last check-in? \n user: It's been a little bit reduced. \n assistant: Okay, a little bit reduced. Thank you for that information. Your veterinarian would like me to call every day to check on Wolfram. When is a good time to call you for the next update? For example, morni- \n user: Six PM. \n assistant: Perfect. Thank you so much for taking the time to give me this update on Wolfram. I'll make note of your preferred call time, and you'll hear from me then. Your veterinarian will review this information and will reach out if any changes to Wolfram's treatment plan are needed. Have a great day! \n user: Thank you. \n "
+}

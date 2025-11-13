@@ -24,3 +24,6 @@ Step 6 -
 npx neonctl@latest init
 
 psql 'postgresql://neondb_owner:npg_MlB6w4ujKrRF@ep-falling-boat-a11ni4dg-pooler.ap-southeast-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require'
+
+Step 7: Optional, insatll cron job
+npm i cron
